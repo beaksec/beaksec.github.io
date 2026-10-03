@@ -37,11 +37,12 @@ social:
   # Displayed as the default author of the posts and the copyright owner in the footer
   name: beaksec
   email: # no public email; contact via GitHub
-  fediverse_handle: # e.g. "@username@infosec.exchange"
+  fediverse_handle: "@beaksec@defcon.social"
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/beaksec
     - https://www.youtube.com/@BeakSec
+    - https://defcon.social/@beaksec
     # Add more social links here, e.g.:
     # - https://infosec.exchange/@username
     # - https://www.linkedin.com/in/username
