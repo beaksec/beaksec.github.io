@@ -2,7 +2,7 @@
 title: "Telegram Desktop: one-click account takeover via IPC injection"
 date: 2026-10-03 10:00:00+0200
 categories: [Research]
-tags: [telegram, critical, command-injection, account-takeover, arbitrary-file-read, beaksec]
+tags: [telegram, high, command-injection, account-takeover, arbitrary-file-read, beaksec]
 description: An unescaped separator in Telegram Desktop's single-instance IPC lets one clicked link read arbitrary files off the disk and send them to the attacker, session files included.
 image:
   path: /assets/img/posts/telegram-desktop-one-click-account-takeover/cover.png
@@ -29,9 +29,9 @@ use it to steal the files that are the victim's login.
 |---|---|
 | **Affected** | Telegram Desktop through 7.2.8, confirmed on Windows (6.9.3) |
 | **Impact** | Remote arbitrary local file read, exfiltrated to an attacker-controlled chat; account takeover |
-| **CVE** | pending |
+| **CVE** | [CVE-2026-107181](https://www.cve.org/CVERecord?id=CVE-2026-107181) |
 | **Fixed in** | 7.2.9, commit [`db3405699f`](https://github.com/telegramdesktop/tdesktop/commit/db3405699f8fc3ae28a58d2348b7d13a43c0590a) |
-| **Severity** | 9.3 Critical, `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N` |
+| **Severity** | 8.1 High, `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N` |
 
 ## One link, two processes
 
@@ -405,11 +405,10 @@ that connection.
 | 2026-09-17 | Telegram Desktop 7.2.9 published |
 | 2026-09-30 | ZDI closes the case as already fixed; disclosure rights return to me |
 | 2026-10-03 | This writeup |
+| 2026-10-07 | CVE-2026-107181 assigned |
 
 The fix shipped quietly: the 7.2.9 changelog mentions only a rendering fix, the commit that closes
 the chain is titled "Remove legacy interpret path helper", and no advisory accompanied it.
-
-I will update this post when a CVE identifier is assigned.
 
 ## BeakSec on YouTube
 
