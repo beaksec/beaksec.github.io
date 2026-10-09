@@ -28,10 +28,8 @@ url: "https://beaksec.github.io"
 github:
   username: beaksec
 
-# Uncomment if you ever open an X/Twitter account. Leaving the key present
-# but empty makes jekyll-seo-tag emit a useless <meta twitter:site="@">.
-# twitter:
-#   username: beaksec
+twitter:
+  username: beaksec
 
 social:
   # Displayed as the default author of the posts and the copyright owner in the footer
@@ -42,6 +40,8 @@ social:
     # The first element serves as the copyright owner's link
     - https://github.com/beaksec
     - https://www.youtube.com/@BeakSec
+    - https://x.com/beaksec
+    - https://www.linkedin.com/in/emiliano-versini
     - https://defcon.social/@beaksec
     # Add more social links here, e.g.:
     # - https://infosec.exchange/@username
